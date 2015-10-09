@@ -1,0 +1,31 @@
+{
+  "name": "snap-playlist",
+  "version": "1.0.0",
+  "description": "Polymer web component that plays a set of videos.",
+  "main": "snap-playlist.html",
+  "moduleType": [],
+  "keywords": [
+    "Polymer",
+    "video",
+    "playlist"
+  ],
+  "authors": [
+    "Eduardo Oviedo Blanco"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  }
+}
