@@ -26,6 +26,10 @@
           controls: {
             type: Boolean,
             value: false
+          },
+          playsinline: {
+            type: Boolean,
+            value: false
           }
         },      
         playlist: [],
@@ -33,7 +37,10 @@
         ready: function() {        
           this.$.player.loop = false;
           this.$.player.muted = this.muted;
-          this.$.player.controls = this.controls;               
+          this.$.player.controls = this.controls;
+          if (this.playsinline) {
+            this.$.player.setAttribute("webkit-playsinline", '');
+          };
           this.start();        
         },      
         preparelist: function(){
